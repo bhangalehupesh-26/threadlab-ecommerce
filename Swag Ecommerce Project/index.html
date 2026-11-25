@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ThreadLab Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <h2>ThreadLab.</h2>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Sneakers</a>
+        </nav>
+
+        <input type="text" id="search" placeholder="Search products">
+
+        <h3>Cart: <span id="cart">0</span></h3>
+    </header>
+
+    <div class="main">
+
+        <!-- Sidebar -->
+        <aside>
+            <h3>Categories</h3>
+
+            <button onclick="showAll()">All Products</button>
+            <button onclick="filterProduct('Men')">Men</button>
+            <button onclick="filterProduct('Women')">Women</button>
+            <button onclick="filterProduct('Sneakers')">Sneakers</button>
+
+            <hr>
+
+            <h3>Sizes</h3>
+            <p>S &nbsp; M &nbsp; L &nbsp; XL</p>
+
+            <hr>
+
+            <h3>Colours</h3>
+            <p>Black</p>
+            <p>White</p>
+            <p>Blue</p>
+        </aside>
+
+        <!-- Product Section -->
+        <section class="products">
+
+            <h1>Discover Your Style</h1>
+            <p>Latest fashion collection</p>
+
+            <div class="product-container">
+
+                <!-- Product 1 -->
+                <div class="product" data-category="Men">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500" alt="T-shirt">
+
+                    <h3>Classic T-Shirt</h3>
+                    <p>Men</p>
+                    <h4>₹799</h4>
+
+                    <button onclick="addCart()">Add to Cart</button>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product" data-category="Women">
+                    <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500" alt="T-shirt">
+
+                    <h3>Casual T-Shirt</h3>
+                    <p>Women</p>
+                    <h4>₹999</h4>
+
+                    <button onclick="addCart()">Add to Cart</button>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product" data-category="Sneakers">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="Shoes">
+
+                    <h3>Sport Sneakers</h3>
+                    <p>Sneakers</p>
+                    <h4>₹1499</h4>
+
+                    <button onclick="addCart()">Add to Cart</button>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product" data-category="Men">
+                    <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500" alt="Hoodie">
+
+                    <h3>Comfort Hoodie</h3>
+                    <p>Men</p>
+                    <h4>₹1299</h4>
+
+                    <button onclick="addCart()">Add to Cart</button>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
